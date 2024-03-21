@@ -1,6 +1,10 @@
 ---
 layout: default
 ---
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
 **数据结构与算法基础**
 ### 基础算法
 #### [快排，归并和二分](./基础算法/快排，归并和二分.md)  

@@ -1,0 +1,24 @@
+---
+layout: default
+title: Blog
+---
+<nav class="topnav">
+  <a href="{{ '/' | relative_url }}">{{ site.author.name }}</a> / Blog
+</nav>
+
+<h1 class="page-title">Blog</h1>
+<p class="muted">Notes on machine learning, research, and things I'm learning. <a href="{{ '/blog/feed.xml' | relative_url }}">RSS</a></p>
+
+{% assign posts_by_year = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
+{% for year in posts_by_year %}
+<h2>{{ year.name }}</h2>
+<ul class="post-list">
+  {% for post in year.items %}
+  <li>
+    <span class="post-date">{{ post.date | date: "%b %-d" }}</span>
+    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    {% if post.description %}<div class="post-excerpt">{{ post.description }}</div>{% endif %}
+  </li>
+  {% endfor %}
+</ul>
+{% endfor %}

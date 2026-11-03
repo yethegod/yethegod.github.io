@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 120" width="160" height="120">
+  <rect width="160" height="120" fill="#fff"/>
+  <g font-family="Menlo,monospace" font-size="8" text-anchor="middle">
+    <!-- row 1: fully masked -->
+    <g fill="#d9d9d9"><rect x="14" y="14" width="22" height="16" rx="3"/><rect x="40" y="14" width="22" height="16" rx="3"/><rect x="66" y="14" width="22" height="16" rx="3"/><rect x="92" y="14" width="22" height="16" rx="3"/><rect x="118" y="14" width="22" height="16" rx="3"/></g>
+    <!-- row 2: partly denoised -->
+    <g fill="#d9d9d9"><rect x="14" y="46" width="22" height="16" rx="3"/><rect x="66" y="46" width="22" height="16" rx="3"/><rect x="118" y="46" width="22" height="16" rx="3"/></g>
+    <g fill="#9cc3ee"><rect x="40" y="46" width="22" height="16" rx="3"/><rect x="92" y="46" width="22" height="16" rx="3"/></g>
+    <!-- row 3: fully denoised -->
+    <g fill="#1772d0"><rect x="14" y="78" width="22" height="16" rx="3"/><rect x="40" y="78" width="22" height="16" rx="3"/><rect x="66" y="78" width="22" height="16" rx="3"/><rect x="92" y="78" width="22" height="16" rx="3"/><rect x="118" y="78" width="22" height="16" rx="3"/></g>
+  </g>
+  <g stroke="#888" stroke-width="1.2" fill="none"><path d="M77 32v10M77 64v10"/><path d="M74 39l3 4 3-4M74 71l3 4 3-4"/></g>
+  <text x="80" y="110" font-family="Lato,sans-serif" font-size="10" fill="#f09228" text-anchor="middle">reward → RL update</text>
+</svg>

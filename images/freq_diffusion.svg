@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 120" width="160" height="120">
+  <rect width="160" height="120" fill="#fff"/>
+  <path d="M8 60 C14 30,20 30,26 55 S36 85,42 60 S50 38,56 52 S64 74,70 58" stroke="#1772d0" stroke-width="2" fill="none"/>
+  <text x="39" y="102" font-family="Lato,sans-serif" font-size="10" fill="#666" text-anchor="middle">time</text>
+  <text x="80" y="64" font-family="Lato,sans-serif" font-size="12" fill="#888" text-anchor="middle">⇄</text>
+  <line x1="92" y1="88" x2="152" y2="88" stroke="#bbb"/>
+  <g fill="#f09228">
+    <rect x="94" y="30" width="6" height="58"/><rect x="102" y="44" width="6" height="44"/><rect x="110" y="62" width="6" height="26"/>
+    <rect x="118" y="74" width="6" height="14"/><rect x="126" y="80" width="6" height="8"/><rect x="134" y="83" width="6" height="5"/><rect x="142" y="85" width="6" height="3"/>
+  </g>
+  <text x="122" y="102" font-family="Lato,sans-serif" font-size="10" fill="#666" text-anchor="middle">frequency</text>
+</svg>

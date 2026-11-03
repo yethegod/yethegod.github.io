@@ -1,0 +1,30 @@
+title: Zhaoting Sun
+description: Undergraduate researcher in machine learning at the University of Minnesota.
+url: https://yethegod.github.io
+baseurl: ""
+
+author:
+  name: Zhaoting Sun
+  email: sun01024@umn.edu
+  github: yethegod
+  linkedin: zhaoting-sun-658304331
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  math_engine: mathjax
+highlighter: rouge
+
+permalink: /blog/:year/:month/:title/
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+feed:
+  path: blog/feed.xml
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock

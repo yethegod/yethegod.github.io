@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 120" width="160" height="120">
+  <rect width="160" height="120" fill="#fff"/>
+  <path d="M14 70 C30 40,42 40,52 58 S72 88,84 66 S98 36,110 48 S136 76,148 54" stroke="#9cc3ee" stroke-width="2" fill="none"/>
+  <g fill="#1772d0"><circle cx="14" cy="70" r="4"/><circle cx="30" cy="49" r="4"/><circle cx="52" cy="58" r="4"/><circle cx="84" cy="66" r="4"/><circle cx="95" cy="44" r="4"/><circle cx="104" cy="43" r="4"/><circle cx="148" cy="54" r="4"/></g>
+  <line x1="10" y1="96" x2="152" y2="96" stroke="#bbb"/>
+  <g stroke="#f09228" stroke-width="2"><path d="M14 92v8M30 92v8M52 92v8M84 92v8M95 92v8M104 92v8M148 92v8"/></g>
+  <text x="80" y="112" font-family="Lato,sans-serif" font-size="10" fill="#666" text-anchor="middle">adaptive time steps</text>
+</svg>

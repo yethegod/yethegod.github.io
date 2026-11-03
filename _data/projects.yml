@@ -1,0 +1,47 @@
+# Each entry shows up as one row in the "Research" section on the homepage.
+# Fields: title, authors, venue, date, image (optional, in /images), links (optional), description, highlight (optional, yellow row)
+
+- title: Exploring RL Generalization in Diffusion Language Models
+  authors: <strong>Zhaoting Sun</strong>
+  venue: Research project
+  date: Feb 2026 – May 2026
+  image: dllm_rl.svg
+  highlight: true
+  links:
+    - name: code
+      url: https://github.com/yethegod/dllm_rl
+  description: >
+    Does on-policy RL post-training improve capability retention and out-of-distribution transfer in
+    diffusion language models? Under matched SFT/RL budgets on LLaDA-8B-Instruct, both improve in-domain
+    math reasoning, but RL yields stronger general-capability gains (+14.9 pts HellaSwag, +17.8 pts GPQA),
+    and SFT shows no pronounced catastrophic forgetting — suggesting retention dynamics in dLLMs may
+    differ from autoregressive models.
+
+- title: Time Series Diffusion in the Frequency Domain
+  authors: <strong>Zhaoting Sun</strong>, Liyan Xie
+  venue: UROP-funded project, University of Minnesota
+  date: Sep 2025 – Apr 2026
+  image: freq_diffusion.svg
+  description: >
+    A spectral score-based diffusion framework for time-series generation using FFT-based representations.
+    Frequency-domain diffusion reduces Sliced Wasserstein Distance by 28.6% on ECG (PhysioNet) and 15.2% on
+    synthetic Gaussian-process data versus time-domain baselines, but struggles on spike/impulse processes —
+    pointing to spectral localization as a key factor.
+
+- title: Neural Differential Recurrent Neural Network with Adaptive Time Steps
+  authors: with Liyan Xie and Xiuyuan Cheng
+  venue: Preprint
+  date: Sep 2025 – Jan 2026
+  image: ode_rnn.svg
+  description: >
+    Designed and implemented the experimental pipeline for an RNN-ODE model with adaptive time steps,
+    evaluated against the LEM baseline, and resolved numerical instability and exploding dynamics in
+    long-sequence training.
+
+- title: Uncertainty Quantification for EM-based Inverse Modeling with Corrupted Data
+  authors: advised by Yulong Lu
+  venue: Ongoing
+  date: Apr 2026 – present
+  image: inverse.svg
+  description: >
+    Preliminary experiments on uncertainty quantification for EM-based inverse modeling under data corruption.

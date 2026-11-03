@@ -1,0 +1,70 @@
+---
+layout: default
+---
+<section class="intro">
+  <div class="intro-text">
+    <h1 class="name">Zhaoting Sun</h1>
+    <p>
+      I am an undergraduate student in Computer Science at the
+      <a href="https://twin-cities.umn.edu/">University of Minnesota, Twin Cities</a>,
+      where I work with Prof. Liyan Xie on generative models for sequential data.
+      Before transferring to Minnesota, I studied Computer Science at Xiamen University.
+    </p>
+    <p>
+      I am broadly interested in <strong>generative modeling</strong> — diffusion and flow-based models —
+      as well as <strong>RL post-training for language models</strong>, inverse problems, and statistical machine learning.
+    </p>
+    <p class="links">
+      <a href="mailto:{{ site.author.email }}">Email</a> &nbsp;/&nbsp;
+      <a href="https://github.com/{{ site.author.github }}">GitHub</a> &nbsp;/&nbsp;
+      <a href="https://www.linkedin.com/in/{{ site.author.linkedin }}/">LinkedIn</a> &nbsp;/&nbsp;
+      <a href="{{ '/blog/' | relative_url }}">Blog</a>
+    </p>
+  </div>
+  <div class="intro-photo">
+    <img src="{{ '/images/profile.jpg' | relative_url }}" alt="Zhaoting Sun" onerror="this.parentElement.classList.add('no-photo')">
+    <span class="initials">ZS</span>
+  </div>
+</section>
+
+<section>
+  <h2>Research</h2>
+  <p>
+    My recent work studies how training signals and data representations shape what generative models learn —
+    from RL post-training in diffusion language models to score-based diffusion in the frequency domain.
+  </p>
+
+  {% for p in site.data.projects %}
+  <div class="paper{% if p.highlight %} highlight{% endif %}">
+    <div class="paper-image">
+      {% if p.image %}<img src="{{ '/images/' | append: p.image | relative_url }}" alt="">{% endif %}
+    </div>
+    <div class="paper-text">
+      <span class="paper-title">{{ p.title }}</span><br>
+      <span class="paper-authors">{{ p.authors }}</span><br>
+      <em>{{ p.venue }}</em>, {{ p.date }}<br>
+      {% if p.links %}
+        {% for l in p.links %}<a href="{{ l.url }}">{{ l.name }}</a>{% unless forloop.last %} / {% endunless %}{% endfor %}
+      {% endif %}
+      <p>{{ p.description }}</p>
+    </div>
+  </div>
+  {% endfor %}
+</section>
+
+<section>
+  <h2>Blog</h2>
+  {% if site.posts.size > 0 %}
+  <ul class="post-list">
+    {% for post in site.posts limit: 5 %}
+    <li>
+      <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+  {% if site.posts.size > 5 %}<p><a href="{{ '/blog/' | relative_url }}">All posts &rarr;</a></p>{% endif %}
+  {% else %}
+  <p>Coming soon.</p>
+  {% endif %}
+</section>

@@ -9,13 +9,13 @@ layout: default
       <a href="https://twin-cities.umn.edu/">University of Minnesota, Twin Cities</a>,
       where I work with Prof. Liyan Xie and Prof. Mingyi Hong, and collaborate closely with Dr. Chung-Yiu Yau.
       Before transferring to Minnesota, I studied Computer Science at Xiamen University.
-      I am applying to PhD programs and full-time research positions starting in 2027.
+      I am applying to PhD programs and RA positions starting in 2027.
     </p>
     <p>
       I work on generative modeling and optimization for deep learning, currently:
     </p>
     <ul class="interests">
-      <li><strong>Diffusion language models</strong>: sampling on the accuracy–speed frontier, post-training for reasoning, and scaling up pretraining.</li>
+      <li><strong>Diffusion language models</strong>: sampling on the accuracy–speed frontier, post-training for reasoning, and scaling up pretraining of full-sequence masked diffusion language models.</li>
       <li><strong>Optimization</strong>: optimizers across the stages of LLM training, and when and why matrix-aware methods like Muon beat Adam. </li>
       
     </ul>
@@ -34,10 +34,6 @@ layout: default
 
 <section>
   <h2>Research</h2>
-  <p>
-    My recent work studies how training signals and data representations shape what generative models learn —
-    from RL post-training in diffusion language models to score-based diffusion in the frequency domain.
-  </p>
 
   {% for p in site.data.projects %}
   <div class="paper{% if p.highlight %} highlight{% endif %}">

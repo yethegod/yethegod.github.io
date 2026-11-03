@@ -1,12 +1,24 @@
 # Each entry shows up as one row in the "Research" section on the homepage.
 # Fields: title, authors, venue, date, image (optional, in /images), links (optional), description, highlight (optional, yellow row)
 
+- title: "AdaDuet: Hierarchical Decoding Policies for Diffusion Language Models"
+  authors: <strong>Zhaoting Sun</strong>, et al.
+  venue: Under review
+  date: 2026
+  image: adaduet.svg
+  highlight: true
+  description: >
+    Block-wise decoding of diffusion language models couples two decisions: how large each block is, and which
+    positions to commit at each step. AdaDuet casts this as a semi-Markov decision process and trains a lightweight
+    hierarchical policy with RL on top of a frozen dLLM to make both jointly. On math and code benchmarks it achieves
+    the best accuracy per forward pass among adaptive decoders, spending more compute on harder questions and on the
+    tokens that decide correctness.
+
 - title: Exploring RL Generalization in Diffusion Language Models
   authors: <strong>Zhaoting Sun</strong>
   venue: Research project
   date: Feb 2026 – May 2026
   image: dllm_rl.svg
-  highlight: true
   links:
     - name: code
       url: https://github.com/yethegod/dllm_rl
